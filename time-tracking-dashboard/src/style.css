@@ -19,3 +19,27 @@
 
   --font-rubik: "Rubik", sans-serif;
 }
+
+.bg-work {
+  background-color: var(--color-work);
+}
+
+.bg-play {
+  background-color: var(--color-play);
+}
+
+.bg-study {
+  background-color: var(--color-study);
+}
+
+.bg-exercise {
+  background-color: var(--color-exercise);
+}
+
+.bg-social {
+  background-color: var(--color-social);
+}
+
+.bg-self-care {
+  background-color: var(--color-self-care);
+}
