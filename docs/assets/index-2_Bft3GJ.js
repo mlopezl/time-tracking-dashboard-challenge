@@ -1,0 +1,13 @@
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=document.getElementById(`daily`),t=document.getElementById(`weekly`),n=document.getElementById(`monthly`),r=document.getElementById(`results`),i=await a();async function a(){try{let e=await fetch(`./src/data.json`);if(!e.ok)throw Error(`Error : Error while trying to get data`);return await e.json()}catch(e){return console.error(`error:`,e),null}}r.innerHTML=``,i.forEach(e=>{o(e,`weekly`,`Week`)}),e.addEventListener(`click`,()=>{r.innerHTML=``,i.forEach(e=>o(e,`daily`,`Day`))}),t.addEventListener(`click`,()=>{r.innerHTML=``,i.forEach(e=>{o(e,`weekly`,`Week`)})}),n.addEventListener(`click`,()=>{r.innerHTML=``,i.forEach(e=>{o(e,`monthly`,`Month`)})});function o(e,t,n){let i=e.title.toLowerCase().replaceAll(` `,`-`),a=e.timeframes[t];r.innerHTML+=`<article class="activity bg-${i} w-70 h-35 rounded-xl relative overflow-hidden flex flex-col justify-end gap-5 xl:w-60 xl:h-55">
+          <img class="w-15 absolute -top-1 right-3" src="./src/assets/images/icon-${i}.svg" alt="work icon">
+          <div class="activity__data absolute -bottom-1  w-full h-27 flex flex-col gap-2 p-4 rounded-xl bg-navy-900 z-2 hover:filter hover:brightness-180 hover:transition hover:transition-all hover:duration-500 xl:h-45 xl:p-5">
+            <div class="labels flex justify-between items-center text-white">
+              <p class="capitalize">${i}</p>
+              <img class="w-5 h-1" src="./src/assets/images/icon-ellipsis.svg" alt="Ellipsis icon">
+            </div>
+            <div class="data flex justify-between items-center text-white xl:flex-col xl:items-start xl:gap-5">
+              <p class="text-3xl font-extralight xl:text-5xl xl:pt-3">${a.current}hrs</p>
+              <p class="text-xs text-navy-200">Last ${n} - ${a.previous}hrs</p>
+            </div>
+          </div>
+        </article>`}
