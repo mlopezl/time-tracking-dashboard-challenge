@@ -21,13 +21,13 @@
         <div class="timeframe__type flex p-4 gap-10 justify-center items-center text-purple-500 lg:flex-col lg:gap-2 lg:items-start lg:pl-5">
           <button id="daily" class="focus:text-white hover:text-white hover:transition hover:transition-all hover:duration-500 focus:outline-none font-light">Daily</button> 
           <button id="weekly" class="focus:text-white hover:text-white hover:transition hover:transition-all hover:duration-500 focus:outline-none font-light" autofocus>Weekly</button>
-          <button id="monthly" class="focus:text-white hover:text-white hover:transition hover:transition-all hover:duration-500 focus:outline-none font-light">Monthly</button>
+          <button id="monthly" class="focus:text-white hover:text-white transition duration-500 focus:outline-none font-light">Monthly</button>
         </div>
       </article>
       <section id="results" class="results flex flex-col justify-center gap-4 mb-20 sm:flex-row sm:justify-center sm:flex-wrap lg:w-150 lg:pt-20 xl:w-190">
         <article class="activity bg-${categoryTitle} w-70 h-35 rounded-xl relative overflow-hidden flex flex-col justify-end gap-5">
           <img class="w-15 absolute -top-1 right-3" src="./src/assets/images/icon-${categoryTitle}.svg" alt="work icon">
-          <div class="activity__data absolute -bottom-1  w-full h-27 flex flex-col gap-2 p-4 rounded-xl bg-navy-900 z-2 hover:filter hover:brightness-180 hover:transition hover:transition-all hover:duration-500">
+          <div class="activity__data absolute -bottom-1  w-full h-27 flex flex-col gap-2 p-4 rounded-xl bg-navy-900 z-2 hover:filter hover:brightness-180 transition transition-all duration-500">
             <div class="labels flex justify-between items-center text-white">
               <p class="capitalize">${categoryTitle}</p>
               <img class="w-5 h-1" src="./src/assets/images/icon-ellipsis.svg" alt="Ellipsis icon">
