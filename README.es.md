@@ -48,15 +48,15 @@ Los usuarios deben poder:
 
 ### Diseño para escritorio
 
-<img src="./time-tracking-dashboard/design/desktop-design.jpg" alt="Vista previa del diseño de escritorio" width="700">
+<img src="./design/desktop-design.jpg" alt="Vista previa del diseño de escritorio" width="700">
 
 ### Estados activos
 
-<img src="./time-tracking-dashboard/design/active-states.jpg" alt="Vista previa de estados activos" width="700">
+<img src="./design/active-states.jpg" alt="Vista previa de estados activos" width="700">
 
 ### Diseño para móviles
 
-<img src="./time-tracking-dashboard/design/mobile-design.jpg" alt="Vista previa del diseño móvil" width="250">
+<img src="./design/mobile-design.jpg" alt="Vista previa del diseño móvil" width="250">
 
 ---
 

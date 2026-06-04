@@ -48,15 +48,15 @@ Users should be able to:
 
 ### Desktop Design
 
-<img src="./time-tracking-dashboard/design/desktop-design.jpg" alt="Desktop design preview" width="700">
+<img src="./design/desktop-design.jpg" alt="Desktop design preview" width="700">
 
 ### Active states
 
-<img src="./time-tracking-dashboard/design/active-states.jpg" alt="Desktop design preview" width="700">
+<img src="./design/active-states.jpg" alt="Desktop design preview" width="700">
 
 ### Mobile Design
 
-<img src="./time-tracking-dashboard/design/mobile-design.jpg" alt="Mobile design preview" width="250">
+<img src="./design/mobile-design.jpg" alt="Mobile design preview" width="250">
 
 ---
 
